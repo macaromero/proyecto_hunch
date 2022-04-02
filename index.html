@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- ETIQUETAS META -->
+    <!-- Etiquetas meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <meta name="keywords" content=""> 
     <meta name="description" content="">
 
-    <!-- ETIQUETAS LINK -->
+    <!-- Etiquetas link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
         <!-- Falta linkear -->
@@ -19,31 +19,68 @@
 </head>
 <body>
     <header>
-        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid row-navbar">
+                <div class="row row-navbar">
+                    <a class="navbar-brand" href="#home">
+                        <img src="./assets/imagenes/logo-tentativo.png" alt="logo Hunch" class="logo-navbar">
+                    </a>
+                    <button class="btn btn-primary menuBtn-navbar navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home" >Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#turnos" >Turnos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#nosotros" >Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#horarios" >Horarios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#productos" >Productos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     
     <main>
-        <section>
-            <!-- HOME -->
+        <section id="home">
+            <!-- Home -->
+        </section>
+        <section id="turnos">
+            <!-- Turnos -->
         </section>
         <section>
-            <!-- TURNOS -->
-        </section>
-        <section>
-            <aside>
-                <!-- HISTORIA/NOSOTROS -->
+            <aside id="nosotros">
+                <!-- Historia/Nosotros -->
             </aside>
-            <aside>
-                <!-- HORARIOS -->
+            <aside id="horarios">
+                <!-- Horarios -->
             </aside>
         </section>
-        <section>
-            <!-- PRODUCTOS -->
+        <section id="productos">
+            <!-- Productos -->
         </section>
     </main>
 
     <footer>
-        <!-- FOOTER -->
+        <!-- Footer -->
     </footer>
+
+    <!-- script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
